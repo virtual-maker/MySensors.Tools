@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+
+# Secret files
+**/arduino_secrets.h
+**/sketch.json
+
+# Build files
+*.hex
+*.bin
+*.elf
+*.eep
+*.map
+
+/01-ExtendedNRF24
+/02-MyVirtualSensors
+/MyEtherTcpSensors
+/MyGatewayWemosSirenCtrl
+/MySensorsGatewayEthernet
+/04-VisualStudio-Projects
+
+/99-Old MySensors Projects.lnk
