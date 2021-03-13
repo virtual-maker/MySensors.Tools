@@ -3,7 +3,10 @@ Tools to support MySensors library development and usage.
 
 ## ChannelScannerRF24
 A nRF24L01+ based WiFi Channel Scanner optimised for MySensors RF24 radios.  
-Uses an nRF24L01+ connected to an Arduino AVR Uno/Nano/Mini
+
+The code is based on the Poor Man's Wireless 2.4GHz Scanner, created March 2011 by Rolf Henkel
+
+This tool uses an nRF24L01+ connected to an Arduino AVR Uno/Nano/Mini:
 
 ```
 Cables are:
@@ -14,9 +17,15 @@ Cables are:
 and CE       ->  9 - do not change CE to other pin, it is hard coded
 ```
 
-## TrafficDetector24
+## TrafficDetectorRF24
 A nRF24L01+ based WiFi Traffic Detector for logic analysers.  
-Uses an nRF24L01+ connected to an Arduino AVR Uno/Nano/Mini
+
+The detector scans only one definable channel, typically the channel on which your MySensors transport network operates.  
+A definable output pin can be connected to a LED or better to a logic analyser input.
+
+The code is based on the Poor Man's Wireless 2.4GHz Scanner, created March 2011 by Rolf Henkel
+
+This tool uses an nRF24L01+ connected to an Arduino AVR Uno/Nano/Mini:
 
 ```
 Cables are:
@@ -29,4 +38,11 @@ and CE       ->  9 - do not change CE to other pin, it is hard coded
 
 Set following defines:
 - MY_CHANNEL to detect radio traffic on it  
-- DEBUG_PIN to connect with a LED to ground and/or better with a logic analyser input.
+- and DEBUG_PIN to connect with a LED to ground and/or better with a logic analyser input.
+
+## Additional Links to External Tools
+Here are some external links to additional cool tools very useful for your work 
+with the MySensors library and RF24 transport network:
+
+- [NRF24 Sniffer](https://www.mysensors.org/controller/sniffer)
+- [MYSController](https://www.mysensors.org/controller/myscontroller)
