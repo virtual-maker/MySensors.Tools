@@ -13,7 +13,7 @@
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
-   version 2 as published by the Free Software Foundation.
+   version 3 as published by the Free Software Foundation.
 
  *******************************
 
@@ -117,7 +117,7 @@ void setRX(void)
 void scanChannels(void)
 {
 	disable();
-	for (int j = 0; j < 256; j++) {
+	for (int j = 0; j < 200; j++) {
 		for (int i = 0; i < CHANNELS; i++) {
 			// select a new channel
 			setRegister(_NRF24_RF_CH, i);
