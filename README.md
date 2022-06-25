@@ -46,3 +46,4 @@ with the MySensors library and RF24 transport network:
 
 - [NRF24 Sniffer](https://www.mysensors.org/controller/sniffer)
 - [MYSController](https://www.mysensors.org/controller/myscontroller)
+- [nRF24Doctor](https://github.com/TechNovation01/nRF24Doctor)
